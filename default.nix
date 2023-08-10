@@ -18,5 +18,5 @@
   rusty-rain = pkgs.callPackage ./pkgs/rusty-rain { };
   shinydir = pkgs.callPackage ./pkgs/shinydir { };
   #lsd-git = pkgs.callPackage ./pkgs/lsd-git { };
-  ind = pkgs.callPackage ./pkgs/ind { };
+  #ind = pkgs.callPackage ./pkgs/ind { };
 }
