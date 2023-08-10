@@ -6,7 +6,7 @@
 # commands such as:
 #     nix-build -A mypackage
 
-{ pkgs ? import <nixpkgs> { } }:
+{ system ? builtins.currentSystem, pkgs ? import <nixpkgs> { inherit system; } }:
 
 {
   # The `lib`, `modules`, and `overlay` names are special
@@ -15,4 +15,8 @@
   overlays = import ./overlays; # nixpkgs overlays
 
   hello-nur = pkgs.callPackage ./pkgs/hello-nur { };
+  rusty-rain = pkgs.callPackage ./pkgs/rusty-rain { };
+  shinydir = pkgs.callPackage ./pkgs/shinydir { };
+  #lsd-git = pkgs.callPackage ./pkgs/lsd-git { };
+  ind = pkgs.callPackage ./pkgs/ind { };
 }
