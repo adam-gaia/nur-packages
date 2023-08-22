@@ -21,4 +21,5 @@
   lsd-git = pkgs.callPackage ./pkgs/lsd-git { };
   specsheet = pkgs.callPackage ./pkgs/specsheet { };
   ind = pkgs.callPackage ./pkgs/ind { };
+  cbtr = pkgs.callPackage ./pkgs/cbtr { };
 }
