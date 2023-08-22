@@ -25,5 +25,5 @@
   git-track-repos = pkgs.callPackage ./pkgs/git-track-repos { };
   new-stow = pkgs.callPackage ./pkgs/new-stow { };
   shim = pkgs.callPackage ./pkgs/shim { };
-
+  ide = pkgs.callPackage ./pkgs/ide { };
 }
